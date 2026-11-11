@@ -9,7 +9,7 @@ Stack: React, TypeScript, Redux, MUI, Sass, Node.js, Express, Python, Django, SQ
 ## Links
 
 - [CV (PDF)](https://maciej-koch.com/cv.pdf): résumé with contact details, experience and education
-- [GitHub](https://github.com/maciopelo): open-source code and side projects
+- [GitHub](https://github.com/maciej-koch): open-source code and side projects
 - [LinkedIn](https://www.linkedin.com/in/maciej-koch/): professional profile
 - [koch&code](https://maciej-koch.com/kochandcode): his one-person studio, from simple WordPress sites to React and Next.js apps (Polish version at /pl/kochandcode)
 

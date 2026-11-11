@@ -11,7 +11,7 @@ export const content = {
   years: YEARS, // also the level shown by the hidden XP bar in Exp
   title: "Maciej Koch · Software Engineer",
   links: [
-    { label: "GitHub", url: "https://github.com/maciopelo" },
+    { label: "GitHub", url: "https://github.com/maciej-koch" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/maciej-koch/" },
     { label: "Email", url: "mailto:maciej.k00h@gmail.com" },
     { label: "CV", url: "/cv.pdf" },

@@ -10,7 +10,7 @@ export const cv = {
     { label: 'maciej-koch.com', href: 'https://maciej-koch.com' },
     { label: 'maciej.k00h@gmail.com', href: 'mailto:maciej.k00h@gmail.com' },
     { label: '+48 883 990 811', href: 'tel:+48883990811' },
-    { label: 'github.com/maciopelo', href: 'https://github.com/maciopelo' },
+    { label: 'github.com/maciej-koch', href: 'https://github.com/maciej-koch' },
     { label: 'linkedin.com/in/maciej-koch', href: 'https://www.linkedin.com/in/maciej-koch/' },
     { label: 'Near Cieszyn, Poland' },
   ],
