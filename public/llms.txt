@@ -1,0 +1,18 @@
+# Maciej Koch
+
+> Personal site of Maciej Koch, a software engineer based near Cieszyn, Poland. Single page with three sections: Me, Exp (work and education) and Stack (technologies), in English at / and in Polish at /pl. Built with Next.js, React, TypeScript and three.js; the text content is prerendered into the HTML.
+
+Work: Fullstack Developer at Software Mind (2022–now), Frontend Developer at Ultimate Systems (2021).
+Education: Computer Science MSc, University of Silesia (2022–2023); Computer Science BSc (Eng.), AGH University of Science and Technology (2018–2022).
+Stack: React, TypeScript, Redux, MUI, Sass, Node.js, Express, Python, Django, SQL, three.js, React Three Fiber, GLSL, Git, Figma.
+
+## Links
+
+- [CV (PDF)](https://maciej-koch.com/cv.pdf): résumé with contact details, experience and education
+- [GitHub](https://github.com/maciopelo): open-source code and side projects
+- [LinkedIn](https://www.linkedin.com/in/maciej-koch/): professional profile
+- [koch&code](https://maciej-koch.com/kochandcode): his one-person studio, from simple WordPress sites to React and Next.js apps (Polish version at /pl/kochandcode)
+
+## Optional
+
+- [Software Mind](https://softwaremind.com/): current employer

@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #0a0a0a;
+  --color-text: #ececec;
+  --color-muted: #9a9a9a;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-gold: #e6c15a;
+  --color-xp: #80ff20; /* Minecraft experience green */
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ease-site: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --animate-enter: enter 0.7s var(--ease-site) both;
+  --animate-toast: toast 8s var(--ease-site) both;
+  /* phones: the hidden XP bar shows itself for a moment every 14 s (first time ~4 s after Exp opens) */
+  --animate-xp-flash: xp-flash 14s ease-in-out -8s infinite;
+  --animate-toast-long: toast 15s var(--ease-site) both, glow 1.4s ease-in-out infinite alternate;
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      translate: 0 14px;
+      filter: blur(6px);
+    }
+  }
+  @keyframes xp-flash {
+    0%,
+    88%,
+    100% {
+      opacity: 0;
+    }
+    91%,
+    93% {
+      opacity: 1;
+    }
+  }
+  @keyframes glow {
+    to {
+      box-shadow: 0 0 36px rgb(230 193 90 / 0.6);
+    }
+  }
+  @keyframes toast {
+    0%,
+    100% {
+      opacity: 0;
+      translate: var(--toast-x) 6px;
+    }
+    12%,
+    85% {
+      opacity: 1;
+      translate: var(--toast-x) 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    font-size: 16px;
+    line-height: 1.6;
+    @media (min-width: 1024px) {
+      font-size: 17px;
+    }
+  }
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    @apply bg-bg text-text;
+  }
+  a {
+    @apply text-white hover:underline focus-visible:underline;
+  }
+}
+
+@layer components {
+  /* `sudo rm -rf /` in the terminal: the page fades out for a moment, the terminal stays */
+  .wipeable {
+    transition: opacity 1.2s;
+  }
+  /* important: beats opacity utilities on the elements themselves (utilities sit in a later layer) */
+  .wiped .wipeable {
+    opacity: 0 !important;
+  }
+}
+
+/* the portfolio fits the screen and scrolls only inside its panel; the company page is a normal, scrolling page */
+html:has(.studio),
+body:has(.studio) {
+  height: auto;
+  overflow: auto;
+}
+
+/* the CV page is a sheet of paper, on screen and in print (scripts/cv.mjs) */
+body:has(.cv) {
+  height: auto;
+  overflow: auto;
+  background: #777;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  body:has(.cv) {
+    background: #fff;
+  }
+}
